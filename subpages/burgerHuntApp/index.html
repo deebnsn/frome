@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title> The Burger Hunt</title>
+		<link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+        <link href="https://fonts.googleapis.com/css?family=David+Libre%7CPacifico" rel="stylesheet">
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC5lOLzCEyniqDW4zwfvtsw_uaT9z-cQB8"></script>
+        <script src="js/packery.pkgd.min.js"></script>
+        <script src="js/moment.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<main>		
+			<section id="opener">
+				<nav id="openingnav">
+					<h1> Burger Hunt </h1>
+					<input type="button" id="findMe_button" value="Find me!" >
+         	 		<form>
+                        <label> 
+               				<input id="autocomplete" placeholder="Enter your location" type="text" onkeypress="handle(event)">
+           				</label>
+        					<input type="button" id="letsGo_button" value="Let's go!"> 
+        			</form>
+                </nav>
+         	</section>
+         	<section id="results" class="blocked">
+                
+                                               
+                    <nav id="navbar">
+                    <a id="home" class="home" href="index.html"> Burger Hunt </a>
+                    </nav>
+                
+                <section id="lord"> 
+                    <section id="info">
+                    </section>
+                    <section id="grid" class="grid">
+                    </section>
+                </section>
+                <footer>
+                </footer>
+            </section>
+        </main>                    
+        <script src="js/script.js"> </script>
+        <script src="js/zenscroll-min.js"></script> <!-- https://zengabor.github.io/zenscroll/  -->
+    </body>
+</html>

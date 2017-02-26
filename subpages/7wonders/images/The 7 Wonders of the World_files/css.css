@@ -1,0 +1,157 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+
+/* the header is the navigation bar at the top in black.
+Positioned fixed to stay at the top of the screen. 
+Height to match button sizes. Without this section, there would be a big gap
+between the two buttons. */
+
+header { position: fixed;
+		 top: 0px;
+		 left:0px;
+		 height: 52px ;
+		 width: 100%;
+		 z-index:9999;
+		 background-color:black;
+		}
+
+
+/* Styling for the two buttons. 16px padding to match height of header bar
+when hover over background changes with text.  */
+button  {text-decoration: none;
+		color: white;
+		background-color: black;
+		cursor:pointer;
+		border: none;
+		max-height:52px;
+		font-size: 14px;
+		border: none;}
+
+ /* Here we have the individual styling of the two buttons */
+
+#home {position:fixed;
+		right:0px;
+		top:0px;}
+.Home-link {display:block;
+		padding:18px;
+		position:absolute;
+		right:0px;
+		top:0px;
+		}
+
+#the7 {padding-top: 18.1px;
+	   padding-bottom: 18.11px;
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:200px;}
+
+/* link effects on buttons and menu */
+
+#the7:hover {
+    	background-color: white;
+    	color: black;
+    		 }
+
+
+a{display:block;
+ text-decoration: none;
+color:white;}
+a:hover {background-color: white;
+	color:black;}
+
+
+
+
+/* Here makes the submenu invisible */
+
+.submenu {
+	display:none;
+	}
+
+.menu button:focus + .submenu,
+ .submenu:hover {
+    display: inline-block;
+    position: fixed;
+    width:200px;
+    background-color: black;
+    opacity: 0.7;
+    left:0px;
+    top: 52px;
+   	color:white;
+	padding-left: 0px;
+	padding-right: 0px;
+	line-height: 50px;
+	list-style:none;
+	text-align: center;
+}
+
+
+.submenu:hover 
+li:hover  {
+	background-color: white;
+	color:black;
+	font-size: 24px;
+	cursor:pointer;
+}
+
+a:hover {background-color: white;
+		color:black;
+		cursor:pointer;
+	}
+
+
+
+
+
+img 	{position:relative; 
+	width: 100%;
+
+		}
+
+h1 		{position:absolute;
+		left: 0;
+		right: 0;
+		top:200px;
+		margin:0 auto;
+		width: 50vw;
+		height:20vh;
+		font-family: David Libre; serif}
+
+.opening {margin:40px auto 40px auto;
+		text-align: center;
+		font-family:David Libre;serif;
+		font-size: 24px;}
+
+
+
+
+
+.container {
+		display:flex;
+		flex-direction: row;
+		
+		justify-content: space-around;
+		flex-grow: 1;
+		}
+
+figure {width:40%;
+}
+
+@media all and (max-width:650px) {
+.container {flex-direction: column;}
+figure {width:80%;}}
+
+
+h2 			{font-size:24px;
+			width:100%;
+			text-align: center;
+		}
+.boximages { padding-bottom: 16px; }
+
+p 		{font-family: David Libre; serif;
+		font size: 16px;
+		text-align:center;
+	line-height: 1.43em;}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title>David Benson</title>
+		<link rel="stylesheet" href="css/style.css" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=David+Libre%7CMontserrat" rel="stylesheet">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+	<header>
+    
+		<p id="name"> <b> David Benson </b>
+		</p>
+	
+	</header>
+	<main>
+
+  <section class="container">
+      <figure>
+        <a href="subpages/burgerhunt/index.html" id="appLink">
+        <img src="images/burger.jpg">
+        <p class=title><b>Burger Hunt </b></p>
+        <p class=info>
+        Burger Hunt is a web application that I developed using an API from foursquare. 
+        </p>
+        </a>
+        <hr>
+      </figure>
+      <figure>
+        <a href="subpages/7wonders/index.html">
+        <img src="images/7.jpg">
+        <p class=title><b>The Seven Wonders of the World
+        </b></p>
+        <p class=info> 
+        This is a basic website developed using just HTML and CSS. It can be used as a template for other sites that could benefit from displaying images and text in such a way.
+        </p>
+        </a>
+        <hr>
+      </figure>
+      <figure>
+        <a href="https://www.youtube.com/watch?v=r7QabUl9OA0">
+        <img src="images/evo.jpg">
+        <p class=title><b>
+          The Evolution of Hip Hop </b>
+          </p>
+        <p class=info>
+        A compilation video of Hip Hop/Rap music over time. It was developed using Premiere Pro in early 2012.
+        <p>
+        </p>
+        <hr>
+      </figure>
+      
+
+  </section>
+		
+	</main>
+  <script>
+
+var diversion = document.getElementById('appLink');
+function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+
+if (is_touch_device()) {
+ diversion.href = "subpages/burgerHuntApp/index.html";
+
+}
+
+;
+  </script>
+
+	</body>
+</html>
+
+		
+
+
+
+
+
+			
+	

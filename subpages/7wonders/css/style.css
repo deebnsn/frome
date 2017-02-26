@@ -1,0 +1,270 @@
+html, body {
+		width: 100%; 
+		height: 100%;
+		margin: 0px;
+		margin-bottom: 0px;
+    	padding: 0px;
+
+    }
+/*Padding/margin set to zero and width/height to 100% to avoid white spaces on edge of screen. 
+----------------------------------------------------------------------------------------*/
+header {
+		position: fixed;
+		top: 0px;
+		left:0px;
+		height: 52px;
+		width: 100%;
+		z-index:9999;
+		background-color:black;
+	}
+/* The header is the navigation bar at the top. Positioned fixed with top and left set to
+zero for it to sit at the top of the screen at all times. Z-index set very high so it will 
+always be displayed in front of all content. 
+----------------------------------------------------------------------------------------*/
+#home-link {
+		padding:18px;
+		position:absolute;
+		right:0px;
+		top:0px;
+		font-family:arial;
+		font-size: 14px;
+	}
+#the7  { 
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:200px;
+		padding-top: 18px;
+	    padding-bottom: 18px;
+		color: white;
+		background-color: black;
+		cursor:pointer;
+		border: none;
+		max-height:52px;
+		font-size: 14px;
+		white-space: nowrap;
+	}
+/*Styling for the two navigation icons. Both are styled the same - padding 18px, font 14px,
+and are positioned at opposite ends of the navigation bar. Home-link is also a link, so
+additional stylings are applied under 'a' styling below. Nowrap applied to ensure that the
+text remains on one line.
+----------------------------------------------------------------------------------------*/
+a 		{	
+		display:block;
+ 		text-decoration: none;
+		color:white;
+	}
+#the7:hover {
+    	background-color: white;
+    	color: black;
+    }
+a:hover {
+		background-color: white;
+		color:black;
+		cursor:pointer;
+	}
+/* link and hover styling for two navigation icons. 'a' styling also applies to links in
+submenu. Cursor set to pointer on hover to highlight interactivity.
+----------------------------------------------------------------------------------------*/
+.submenu {
+		display:none;
+	}
+/* The submenu is not displayed whilst not in use.
+----------------------------------------------------------------------------------------*/
+.menu button:focus + .submenu,
+ .submenu:hover {
+    	display: inline-block;
+    	position: fixed;
+    	width:200px;
+    	background-color: black;
+    	opacity: 0.7;
+    	left:0px;
+    	top: 52px;
+   		color:white;
+		padding-left: 0px;
+		padding-right: 0px;
+		line-height: 50px;
+		list-style:none;
+		text-align: center;
+	}
+.submenu:hover li:hover  {
+		background-color: white;
+		color:black;
+		font-size: 24px;
+		cursor:pointer;
+	}
+
+.menu button:hover + .submenu,
+ .submenu:hover {
+    	display: inline-block;
+    	position: fixed;
+    	width:200px;
+    	background-color: black;
+    	opacity: 0.7;
+    	left:0px;
+    	top: 52px;
+   		color:white;
+		padding-left: 0px;
+		padding-right: 0px;
+		line-height: 50px;
+		list-style:none;
+		text-align: center;
+	}
+
+/* Creates a drop-down menu on click. Selectors from a stackoverflow comment by Stephan 
+Muller: 
+http://stackoverflow.com/questions/18786546/creating-drop-down-menu-on-click-css. 
+Uses :focus pseudo class on the 'Seven wonders of the...' button. When the button inside 
+the .menu is clicked on, the .submenu is displayed. Submenu given slight opacity styling. 
+.submenu:hover is needed here for hover characterics to remain displayed whilst button
+is focused(clicked) on. 
+
+Hover styling is applied to the individual list elements (li:hover) inside the
+submenu:hover selector.
+
+The submenu is also given the same characteristics on hover over the menu button. This was
+added after testing in order for the website to be functional with Mac. 
+----------------------------------------------------------------------------------------*/
+img 	{
+		position:relative;
+		top:52px; 
+		width: 100%;
+	}
+.imageedit {
+		display:none;
+	}
+h1 		{
+		position:absolute;
+		top:54px;
+		right:10.5vw;
+		width:20vw;
+		text-align: center;
+		color: white;
+		font-size:6vw;
+		font-family: "David Libre";
+	}
+#natural-heading {
+		top:10px;
+	}
+#world-heading{
+		top:38px; right:10.5vw;
+	}
+
+.opening {
+		margin:80px auto 40px auto;
+		text-align: center;
+		font-size: 24px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+/*Main image positioned relative 52px from the top, width 100% to strectch entire screen 
+width. Cropped image hidden. Heading (h1) given styling and positioned absolute in order for
+it to be placed on top of image. Individual positioning given to the natural world and home 
+page headings to place them in a better position relative to their image. Opening paragraph 
+given appropriate margins, centering, and sizing. 
+----------------------------------------------------------------------------------------*/
+.container {
+		display:flex;
+		flex-direction: row;
+		flex-flow:row wrap;
+		justify-content: space-around;
+		flex-grow: 1;
+	}
+/*Flex container for all wonder info boxes. Directed row for larger screen sizes, row wrap 
+flow for it to start new line when reach end of screen. They are all giving flex-grow 1, 
+keeping them equally sized, and space-around, keeping them equally spaced apart. 
+----------------------------------------------------------------------------------------*/
+figure {
+		width: 40%;
+	}
+h2 		{
+		font-size:24px;
+		width:100%;
+		text-align: center;
+	}
+.boximages {
+		top:0px;
+	}
+p 		{
+		font-family: "David Libre";
+		text-align:center;
+		line-height: 1.43em;
+	}
+/*Flexbox items styling. Figures (info boxes) given width of 40% i.e. maximum 2 figures 
+displayed per row. h2 given styling. The images within these figures are placed at very 
+top of box. Paragraph font-family David Libre (from google) applied to paragraph
+as well as the paragraphs in the container and closing sections. It is not applied t
+h2 for stylistic choice. 
+----------------------------------------------------------------------------------------*/
+.closing {
+		margin:40px auto 40px auto;
+		text-align: center;
+		font-size: 24px;
+		}
+footer {
+		color:white;
+		background-color: black;
+		width:100%;
+		overflow:hidden;
+	}
+/* Closing section given similar styling to opening, except that the top margin needed to 
+be less. Footer given similar styling to navigation bar. Hidden overflow given to footer 
+because although chrome was fine, internet explorer and edge had a white space below footer.
+This solved the issue. Solution from thirtydot's comment
+http://stackoverflow.com/questions/6470715/css-white-space-at-bottom-of-page-despite-having-
+both-min-height-and-height-tag.
+----------------------------------------------------------------------------------------*/
+/*---------------------------------Media Queries----------------------------------------*/
+@media all and (max-width:850px) {
+	.container {
+		flex-direction: column;
+	}
+	figure {
+		width:100%;
+		margin: 0 auto 0 auto;
+	}
+	.imagemain {
+		display:none;
+	}
+	.imageedit {
+		display:block;
+	}
+	#world-heading, #natural-heading {
+		top:54px;
+	}
+
+	}
+	}
+/*For screen sizes below 850px. The figures (info boxes) are rearranged by now being 
+ordered in a column. They are also enlarged to 80% to fit more of the screen and centered
+with margins. The main image is now hidden and replaced with the cropped version of it.
+As the natural and world wonders heading were postioned differently to fit the main
+image on larger screens, they are now re-positioned to match the headings of the other
+pages.
+----------------------------------------------------------------------------------------*/
+@media all and (max-width:270px) {
+	#home-link {	
+		display:none;
+	}
+	}
+/*For screen sizes below 270px. The home link begins to cross over the menu button so it
+is hidden. There is an alternative link on the menu anyway, so there is no loss in 
+functionality with it gone.
+----------------------------------------------------------------------------------------*/
+@media all and (max-height:250px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 45px; }}
+@media all and (max-height:225px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 40px; }}
+@media all and (max-height:200px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 35px; }}
+@media all and (max-height:190px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 30px; }}
+@media all and (max-height:170px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 25px; }}
+@media all and (max-height:150px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 20px; }}
+@media all and (max-height:150px) 
+	{.menu button:focus + .submenu,.submenu:hover {line-height: 15px; }}
+/*Set of media queries that gradually reduce the size of the submenu
+when the screen height falls to certain levels. 
+----------------------------------------------------------------------------------------*/
