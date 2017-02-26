@@ -232,6 +232,12 @@ both-min-height-and-height-tag.
 	#world-heading, #natural-heading {
 		top:54px;
 	}
+	p {
+		margin:4px;
+	}
+	#the7{
+		max-height:48px;
+	}
 
 	}
 	}
