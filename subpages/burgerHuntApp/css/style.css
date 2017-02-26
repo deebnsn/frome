@@ -9,14 +9,16 @@
 
 -------------------------------------------------------------------------------------------------------------------
 ---------------1-------------------------------Constants---------------------------------------------------*/
-/*#findMe_button{
+#findMe_button{
   display:none;
 }
-form{
+/* form{
   display:none;
 }
 
 */
+
+
 
 html, body {
   width: 100%; 
@@ -356,8 +358,10 @@ h1 {
   padding-right:18px;
 }
 #mapid {
-  height:400px; 
+  height:350px; 
   width:100%;
+border: double black;
+
 }
 footer {
   height:400px;
@@ -374,7 +378,7 @@ footer {
 }
 .grid-item, .grid-item--height2, .grid-item--large, .grid-item--height3 {
   height: 30px;
-  width: 95vw;
+  width: 100vw;
   padding:0;
   border-top: 1px;
   padding-top: 10px;
