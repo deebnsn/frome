@@ -120,7 +120,7 @@ function showPosition(position) {
 var llGrabber = function() {
 	var xhttp = new XMLHttpRequest();
   xhttp.addEventListener("load", parseResponseGeo);
-  var url = "http://maps.googleapis.com/maps/api/geocode/json?address=" + replace;
+  var url = "//maps.googleapis.com/maps/api/geocode/json?address=" + replace;
   xhttp.open("GET", url);
   xhttp.send();
 };
@@ -225,8 +225,8 @@ var parseResponseBurgers = function() {
     info.appendChild(mapDiv);
     mapDiv.id= "mapid";
     var mymap = L.map("mapid").setView([vLat, vLng], 13);
-    L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZGJlbnNvbjI3IiwiYSI6ImNpd3MwdWJydjAwMTMyb3BjaXllb2Z0N2gifQ.L3Ch698YOx4UeC83ONrAXQ", {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    L.tileLayer("//api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZGJlbnNvbjI3IiwiYSI6ImNpd3MwdWJydjAwMTMyb3BjaXllb2Z0N2gifQ.L3Ch698YOx4UeC83ONrAXQ", {
+    attribution: 'Map data &copy; <a href="//openstreetmap.org">OpenStreetMap</a> contributors, <a href="//creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="//mapbox.com">Mapbox</a>',
     maxZoom: 18,
     id: "Burgers",
     accessToken: "pk.eyJ1IjoiZGJlbnNvbjI3IiwiYSI6ImNpd3MwdWJydjAwMTMyb3BjaXllb2Z0N2gifQ.L3Ch698YOx4UeC83ONrAXQ"
@@ -241,7 +241,7 @@ var parseResponseBurgers = function() {
   var getVenueInfo = function() {
   var xhttp = new XMLHttpRequest();
     xhttp.addEventListener("load",parseResponseVenue);
-    var url = "https://api.foursquare.com/v2/venues/" + venueID  + "?&client_id=" + client_id + "&client_secret=" + client_secret + "&v=" + formattedDate + "&m=foursquare";
+    var url = "//api.foursquare.com/v2/venues/" + venueID  + "?&client_id=" + client_id + "&client_secret=" + client_secret + "&v=" + formattedDate + "&m=foursquare";
     xhttp.open("GET",url);
     xhttp.send();
   }
@@ -271,7 +271,7 @@ document.getElementById("grid").firstChild.click();
 var doSearch = function(){
   var xhttp = new XMLHttpRequest();
   xhttp.addEventListener("load", parseResponseBurgers);
-  var url = "https://api.foursquare.com/v2/venues/explore?&near=" + explore + "&venuePhotos=1&query=burgers" + "&limit=42&client_id="
+  var url = "//api.foursquare.com/v2/venues/explore?&near=" + explore + "&venuePhotos=1&query=burgers" + "&limit=42&client_id="
      + client_id + "&client_secret=" + client_secret + "&v=" + formattedDate + "&m=foursquare";
  xhttp.open("GET", url);
   xhttp.send();
