@@ -233,7 +233,9 @@ both-min-height-and-height-tag.
 		top:54px;
 	}
 	p {
-		margin:4px;
+		margin-left:4px;
+		margin-right: 4px;
+
 	}
 	#the7{
 		max-height:48px;
