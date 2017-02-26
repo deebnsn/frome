@@ -222,6 +222,7 @@ both-min-height-and-height-tag.
 	figure {
 		width:100%;
 		margin: 0 auto 0 auto;
+		margin-bottom: 32px;
 	}
 	.imagemain {
 		display:none;
@@ -235,6 +236,7 @@ both-min-height-and-height-tag.
 	p {
 		margin-left:4px;
 		margin-right: 4px;
+
 
 	}
 	#the7{
