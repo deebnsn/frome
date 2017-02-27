@@ -54,7 +54,7 @@ figure{
 }
 figure:hover{ 
 	cursor:pointer;
-	border:solid #3b5998 10px;
+	border:solid #3b5998 1px;
 	}
 
 img{
