@@ -53,7 +53,7 @@ figure{
 }
 figure:hover{ 
 	cursor:pointer;
-	border:solid #3b5998 1px;
+	border:solid #3b5998 10px;
 	}
 
 img{
@@ -74,7 +74,7 @@ color: #3b5998;
 }
 .info{
 	font-family: 'Montserrat',sans-serif;
-	height:80px;
+	height:50px;
 	word-wrap:break-word;
 	overflow: hidden;
 	
