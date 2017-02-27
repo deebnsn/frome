@@ -12,7 +12,7 @@ header {
 		position: fixed;
 		top: 0px;
 		left:0px;
-		height: 52px;
+		height: 53px;
 		width: 100%;
 		z-index:9999;
 		background-color:black;
@@ -154,8 +154,7 @@ h1 		{
 		margin:80px auto 40px auto;
 		text-align: center;
 		font-size: 24px;
-		padding-left: 5px;
-		padding-right: 5px;
+		padding:5px;
 	}
 /*Main image positioned relative 52px from the top, width 100% to strectch entire screen 
 width. Cropped image hidden. Heading (h1) given styling and positioned absolute in order for
@@ -220,9 +219,8 @@ both-min-height-and-height-tag.
 		flex-direction: column;
 	}
 	figure {
-		width:100%;
+		width:96%;
 		margin: 0 auto 0 auto;
-		margin-bottom: 32px;
 	}
 	.imagemain {
 		display:none;
@@ -233,16 +231,14 @@ both-min-height-and-height-tag.
 	#world-heading, #natural-heading {
 		top:54px;
 	}
-	p {
-		margin-left:4px;
-		margin-right: 4px;
-
-
+	h1{
+		font-size:8.2vw;
 	}
-	#the7{
-		max-height:48px;
+	#ind-heading {
+		right:16vw;
 	}
-
+	.opening{
+		font-size:18px;
 	}
 	}
 /*For screen sizes below 850px. The figures (info boxes) are rearranged by now being 
