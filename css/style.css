@@ -33,9 +33,10 @@ header{
 		display:flex;
 		flex-direction: row;
 		flex-flow:row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-grow:1;
-
+	margin-left: 16px;
+width:96%;
 
 	}
 
@@ -45,7 +46,7 @@ a{
 
 }
 figure{
-	width:45%;
+	width:49%;
 	
 	margin:0px;
 	
@@ -84,22 +85,6 @@ hr{
 }
 
 /*-------------------------------------*/
-
-@media all and (max-width:1000px) {
-.container{
-	justify-content: space-between;
-	margin:6px;
-}
-
-header{
-	width:96%;
-}
-figure{
-	width:45%;
-	padding:8px;
-}
-}
-
 
 
 @media all and (max-width:700px) {
