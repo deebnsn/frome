@@ -46,7 +46,7 @@ a{
 }
 figure{
 	width:45%;
-	padding:8px;
+	
 	margin:0px;
 	
 }
@@ -96,6 +96,7 @@ header{
 }
 figure{
 	width:45%;
+	padding:8px;
 }
 }
 
