@@ -1,0 +1,92 @@
+
+body{
+  margin:0px;
+
+}
+#vis{
+  width:100%;
+  height:100vh;
+
+}
+
+
+.axis--x path {
+  display: block;
+}
+
+.line {
+  fill: none;
+  stroke:grey;
+  opacity:0.2;
+  stroke-width: 1px;
+}
+
+.line:hover{
+  stroke-width:1.5px;
+    stroke:black;
+    opacity: 1;
+
+}
+
+.jimmy{  fill: none;
+  stroke:black;
+  opacity:1;
+stroke-width:1.5px;
+}
+#jimmyLabel{
+    fill: black;
+       font-size: 14px;
+       font-family: georgia;
+       stroke:none;
+
+      }
+
+.tooltip {
+    position:absolute;
+    text-align: center;
+    padding:2px;
+    font: 14px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events:none; /*To target element underneath tooltip */
+    background:rgba(255,255,255,0.5);
+    color:black;
+   
+  
+}
+
+
+
+#title{
+  font-size:34px;
+  text-anchor: left;
+  text-decoration: none;
+  font-family: 'David Libre', sans-serif;
+}
+#author{
+font-size:16px;
+  text-anchor: left;
+  text-decoration: none;
+  font-family: 'David Libre', sans-serif;
+}
+
+@media all and (max-width:900px) {
+#title {
+   font-size:24px;
+}
+}
+
+@media all and (max-width:600px) {
+#title {
+   font-size:18px;
+   font-weight: bold;
+}
+}
+
+@media all and (max-width:400px) {
+#vis {
+   height:80vh;
+   width:100vh;
+}
+}
+
