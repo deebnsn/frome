@@ -165,7 +165,7 @@ function is_touch_device() {
 }
 
 if (is_touch_device()) {
-
+	
  }
  else{
  	window.onresize = function() {
