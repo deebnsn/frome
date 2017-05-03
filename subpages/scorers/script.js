@@ -166,7 +166,7 @@ function is_touch_device() {
 
 if (is_touch_device()) {
 
-	d3.select("#vis").style("height","70vh")
+	d3.select("#vis").style("height","100%")
  }
  else{
  	window.onresize = function() {
