@@ -155,6 +155,22 @@ function type(d, _, columns) {
     for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
     return d;
 }
-window.onresize = function() {
+
+
+
+function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+
+if (is_touch_device()) {
+ }
+ else{
+ 	window.onresize = function() {
     location.reload();
 }
+
+ }
+
+;
