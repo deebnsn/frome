@@ -12,8 +12,7 @@ var svg = d3.select("svg"),
 var parseTime = d3.timeParse("%Y");
 
 var x = d3.scaleTime().range([0, width]),
-    y = d3.scaleLinear().range([height, 0]),
-    z = d3.scaleOrdinal(d3.schemeCategory10);
+    y = d3.scaleLinear().range([height, 0]);
 
 var line = d3.line()
     .curve(d3.curveBasis)
@@ -60,9 +59,6 @@ d3.csv("scorers.csv", type, function(error, data) {
         })
     ]);
 
-    z.domain(scorers.map(function(c) {
-        return c.id;
-    }));
 
     g.append("g")
         .attr("class", "axis axis--x")

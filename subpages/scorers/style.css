@@ -18,7 +18,7 @@ html, body{
 .line {
   fill: none;
   stroke:grey;
-  opacity:0.2;
+  opacity:0.3;
   stroke-width: 1px;
 }
 
