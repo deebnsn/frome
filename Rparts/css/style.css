@@ -4,31 +4,38 @@ html, body {
 		margin: 0px;
 		margin-bottom: 0px;
     	padding: 0px;
-
+    	
     }
 #name{
-	font-family: 'David Libre', sans-serif;
-	text-align: left;
-	color: #3b5998;
-	color:black;
-	font-size: 32px;
-	margin-top:16px;
-	margin-bottom: 16px;
-	margin-left: 0px;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	text-align: center;
+	color: #474747;
+	font-size: 36px;
+	margin:0px;
+	margin-bottom: 14px;
+}
 
+.author{
+	text-align:center;
+	color:#474747;
+	line-height: 1.2;
+	font-weight: 400;
+	font-size:21px;
+	margin-top: 0px;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 header{
-	height:66px;
-	border-bottom: 1px solid black;
+	padding-top:40px;
+	border-bottom: 1px solid #275da1;
 	position:absolute;
 	top:0px;
-	margin-left: 16px;
-	width:96%;
+	width:100%;
 }
 /*-------------------------------------*/
 .container {
 	position:absolute;
+	padding-top: 80px;
 	top:100px;
 		display:flex;
 		flex-direction: row;
@@ -52,7 +59,7 @@ figure{
 }
 figure:hover{ 
 	cursor:pointer;
-	border:solid #3b5998 1px;
+	border:solid #275da1 1px;
 	}
 
 img{
@@ -68,7 +75,7 @@ color:black;}
 
 margin:2px;
 text-align: left;
-color: #3b5998;
+color: #275da1;
 
 }
 .info{
@@ -91,9 +98,6 @@ hr{
 	margin:6px;
 }
 
-header{
-	width:96%;
-}
 figure{
 	width:45%;
 }
@@ -103,13 +107,19 @@ figure{
 
 @media all and (max-width:700px) {
 
+.author{
+	font-size:14px;
+}
 #name{
 	font-size: 24px;
-	text-align: center;
+	margin-bottom: 6px;
+
 }
 header{height:56px;
 		width:100%;
 		margin:0px;
+	padding-top:10px;
+	padding-bottom: 10px;
 }
 figure{
 	width:95%;
@@ -118,6 +128,8 @@ figure{
 	justify-content: center;
 	flex-direction: column;
 	top:66px;
+	padding-top: 20px;
+
 }
 hr{
 	display:block;
