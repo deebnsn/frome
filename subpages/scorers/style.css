@@ -78,15 +78,21 @@ font-size:16px;
 }
 
 
-#opener {
+.opener {
   margin:0px;
-    text-align: center;
     font-size: 24px;
     font-weight: normal;
     padding-top:0px;
     padding-right:16px;
-    padding-bottom: 16px;
     line-height: 32px;
+}
+
+#opener2{
+  padding-top: 32px;
+}
+
+img{
+  width:100%;
 }
 
 @media all and (max-width:900px) {

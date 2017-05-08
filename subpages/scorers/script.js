@@ -104,7 +104,7 @@ d3.csv("scorers.csv", type, function(error, data) {
         .attr("id","title")
         .attr("x", margin.left + (width / 15))
         .attr("y", margin.top/1.5)
-        .text("Goalscorers in the English")
+        .text("Prolific Goalscorers in the English")
    var titleTop = svg.append("text")
         .attr("id","title")
         .attr("x", margin.left + (width / 15))
