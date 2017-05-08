@@ -56,6 +56,8 @@ code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Ann
 code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 
+</style>
+
 <style>
 header h1{
 	display:none;
@@ -69,7 +71,7 @@ header h3 {
 }
 </style>
 
-</style>
+
 
 
 
@@ -97,7 +99,7 @@ header h3 {
 <p>Spam filtering involves predicting whether a message is unwanted spam (e.g. unwanted promotions) or a message that is of interest (for analysis referred to as ‘ham’). These are most useful in email systems where spam messages are automatically dumped into a spam folder. The procedure to do this can however be applied to other areas. For example, Apple Inc. could use filtering to analyse tweets. It could determine whether a tweet with ‘apple’ in it, is about their company and therefore of interest to them, or about the apple fruit (as in apples and pears), and therefore not of interest to them. The probability that a message with the word ‘apple’ in it, refers to Apple Inc., is higher if it also includes words like ‘iPhone’ and ‘computer’, than if it includes words like ‘strawberries’ and ‘farmers’. Likewise, the probablity that a message is spam is higher if it includes certain words. These words are determined by analysing a dataset of messages that have been already classified into spam or not spam (ham).</p>
 <div id="naive-bayes" class="section level2">
 <h2>Naive Bayes</h2>
-<p>Naive Bayes calculates the probability that a message is spam given that it includes certain words. It does this by assuming independence of events i.e. the probablity of word A occuring in a spam message is independent to the probabililty of word B occuring. This is an oversimplification and is why this classifier is ‘naive’. In reality, the probablity of Word A occuring in a spam message may change if we already knew word B occurs in that message. Accounting for this would be computational expensive. Naive Bayes performs well despite it’s simplicity. It is therefore used often in text classification.</p>
+<p>Naive Bayes calculates the probability that a message is spam given that it includes certain words. It does this by assuming independence of events i.e. the probablity of word A occuring in a spam message is independent to the probabililty of word B occuring. This is an oversimplification and is why this classifier is ‘naive’. In reality, the probablity of Word A occuring in a spam message may change if we already knew word B occurs in that message. Accounting for this would be computational expensive. Naive Bayes performs well despite it’s simplicity. It is therefore often used for a quick text classification model.</p>
 </div>
 <div id="sms-spam-filtering" class="section level2">
 <h2>SMS Spam Filtering</h2>
