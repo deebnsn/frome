@@ -4,7 +4,7 @@ html, body {
 		margin: 0px;
 		margin-bottom: 0px;
     	padding: 0px;
-    	
+    	background-color: #FAFAFA;
     }
 #name{
 	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -68,7 +68,7 @@ img{
 	
 }
 
-p{background-color: white;
+p{background-color: #FAFAFA;
 color:black;}
 
 .title{
