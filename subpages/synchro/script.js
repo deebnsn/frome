@@ -16,7 +16,7 @@ if (is_touch_device()) {
         .style("margin-right","5%")
         .style("margin-left","5%")
     d3.select('#eurozoneLabel')
-        .attr("transform", "translate(" + width / 9.5 + "," + height / 5 + ")")
+        .style('font-size',"24px")
 
  }
  else{
