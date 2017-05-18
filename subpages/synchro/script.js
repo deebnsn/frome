@@ -12,9 +12,9 @@ function is_touch_device() {
 }
 if (is_touch_device()) {
     d3.select("#writings")
-        .style("width","98%")
-        .style("margin-right","1%")
-        .style("margin-left","1%")
+        .style("width","90%")
+        .style("margin-right","5%")
+        .style("margin-left","5%")
  }
  else{
     window.onresize = function() {
