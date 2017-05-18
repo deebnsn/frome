@@ -1,4 +1,3 @@
-//student c1648154 module CMT212
 /*-------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------Global Functions-----------------------------------------------------------*/
 var capitalizeFirstLetter = function(string) {
@@ -6,12 +5,20 @@ var capitalizeFirstLetter = function(string) {
     } //http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
 //Used to transform the ID's of countries to an upper case first letter for display.
 
-window.onresize = function() {
+function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+if (is_touch_device()) {
+    
+ }
+ else{
+    window.onresize = function() {
     location.reload();
 }
 //A function to reload the page when the window is resized. It is used for responsiveness. The D3 is rendered again matching 
 //the window size. This is not an ideal solution and should be reassessed in the future.
-
 /*-------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------SVG Preparations----------------------------------------------------------*/
 var width = document.getElementById('vis').clientWidth;
