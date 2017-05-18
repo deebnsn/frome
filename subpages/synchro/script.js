@@ -264,7 +264,7 @@ are positioned correctly.   */
         svg.select("#author")
             .attr("transform", "translate(" + width / 2 + "," + height / 6 + ")")
         svg.select("#eurozoneLabel")
-            .attr("transform", "translate(" + width / 9.5 + "," + height / 3.5 + ")")
+            .attr("transform", "translate(" + width / 9.5 + "," + height / 4 + ")")
     };
     //some small responsiveness changes when the height of the svg is very low.
 
