@@ -1,30 +1,7 @@
-/*-------------------------------------------------------------------------------------------------------------------
-------------------------------------------------Global Functions-----------------------------------------------------------*/
 var capitalizeFirstLetter = function(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     } //http://stackoverflow.com/questions/1026069/how-do-i-make-the-first-letter-of-a-string-uppercase-in-javascript
 //Used to transform the ID's of countries to an upper case first letter for display.
-
-function is_touch_device() {
- return (('ontouchstart' in window)
-      || (navigator.MaxTouchPoints > 0)
-      || (navigator.msMaxTouchPoints > 0));
-}
-if (is_touch_device()) {
-    d3.select("#writings")
-        .style("width","90%")
-        .style("margin-right","5%")
-        .style("margin-left","5%")
-    d3.select('#eurozoneLabel')
-        .style('font-size',"24px")
-
- }
- else{
-    window.onresize = function() {
-    location.reload();
-}}
-//A function to reload the page when the window is resized. It is used for responsiveness. The D3 is rendered again matching 
-//the window size. This is not an ideal solution and should be reassessed in the future.
 /*-------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------SVG Preparations----------------------------------------------------------*/
 var width = document.getElementById('vis').clientWidth;
@@ -672,3 +649,23 @@ d3.csv("cycleData.csv", function(error, data) {
     };
     //small amount of responsive design, where the x axis is altered to fit better when window size is small.
 });
+//-------------------------------------------------------------------------------------------------------------------------------
+function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+if (is_touch_device()) {
+    d3.select("#writings")
+        .style("width","90%")
+        .style("margin-right","5%")
+        .style("margin-left","5%")
+    d3.select('#eurozoneLabel')
+        .style("font-size","24px")
+ }
+ else{
+    window.onresize = function() {
+    location.reload();
+}}
+//A function to reload the page when the window is resized. It is used for responsiveness. The D3 is rendered again matching 
+//the window size. This is not an ideal solution and should be reassessed in the future.
