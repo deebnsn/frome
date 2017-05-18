@@ -11,7 +11,8 @@ function is_touch_device() {
       || (navigator.msMaxTouchPoints > 0));
 }
 if (is_touch_device()) {
-    
+    d3.select("#writings")
+        .style("width","95%")
  }
  else{
     window.onresize = function() {
