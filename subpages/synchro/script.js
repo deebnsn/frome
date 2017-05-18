@@ -217,7 +217,7 @@ d3.csv("cycleData.csv", function(error, data) {
         .attr("transform", "translate(" + width / 2 + "," + height / 9 + ")")
         .attr("class", "labels")
         .attr("id", "author")
-        .text("By Anonymous")
+        .text("By David Benson")
      //Author. Set as anonymous for marking purposes.
 
     var markerA = svg.append('circle')
