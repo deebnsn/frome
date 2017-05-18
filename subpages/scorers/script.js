@@ -1,4 +1,4 @@
-var svg = d3.select("svg"),
+var svg = d3.select("#vis").append("svg").attr("width","100%").attr("height","100%");
     margin = {
         top: 70,
         right: 80,

@@ -660,8 +660,6 @@ if (is_touch_device()) {
         .style("width","90%")
         .style("margin-right","5%")
         .style("margin-left","5%")
-    d3.select('#eurozoneLabel')
-        .style("font-size","24px")
  }
  else{
     window.onresize = function() {
