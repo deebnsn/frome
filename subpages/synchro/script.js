@@ -16,7 +16,7 @@ if (is_touch_device()) {
  else{
     window.onresize = function() {
     location.reload();
-}
+}}
 //A function to reload the page when the window is resized. It is used for responsiveness. The D3 is rendered again matching 
 //the window size. This is not an ideal solution and should be reassessed in the future.
 /*-------------------------------------------------------------------------------------------------------------------
