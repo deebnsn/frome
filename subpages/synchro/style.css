@@ -1,0 +1,146 @@
+/*student c1648154 module CMT212*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#vis {
+    height:70%;
+}
+#vis2 {
+    height:25%;
+}
+/*Vis 1 and 2 take up most of the page together. */
+
+.line{
+    fill:none;
+    stroke:grey;
+    opacity:0.2;
+    stroke-width: 2px; 
+}
+.line:hover {
+    opacity:1;
+    stroke-width:3px;
+    cursor: pointer;
+}
+.lineSelected {
+    fill:none;
+    stroke:gold;
+    opacity:1;
+    stroke-width:3px;
+}
+.noline {
+    fill:none;
+    display:none;
+}
+/*Line styling. Greyed out light is made larger and opacity raised.   */
+
+#euro12 {
+    fill:none;
+    stroke: steelblue;
+    opacity: 1;
+    stroke-width: 3px;
+}
+/*The original Eurzone line of all 12 countries is styled here*/
+
+#newEuro {
+    fill:none;
+    stroke:steelblue;
+    stroke-width:3px;
+}
+/*The new line element for the Eurozone gdp business cycle line is styled here.*/
+
+.axis { 
+    font:14px sans-serif;
+    cursor:default; 
+}
+.labels {
+    text-anchor: middle
+}
+#title {
+    text-decoration: none;
+    font-family: 'David Libre', sans-serif;
+}
+#author {
+    font-weight:bold;
+    font-family: 'David Libre', sans-serif;
+}
+/*Styling fo the graph elements*/
+
+.tooltip {
+    position:absolute;
+    text-align: center;
+    width:80px;
+    padding:2px;
+    font: 14px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events:none; /*To target element underneath tooltip */
+    background:rgba(255,255,255,0.5);
+}
+
+#tooltipMain{
+    height:50px;
+    width:90px;
+}
+#tooltipCountry {
+    color:black;
+    text-decoration: bold;
+    height:10px;
+}
+#tooltipCor {
+    font: 12px sans-serif;
+    width:200px;
+    height:55px;
+}
+/*Tooltip styling. Background rgba white with 0.7 opacity to improve visibility.*/
+
+.marker {
+    display: none;
+    fill:none;
+    pointer-events: none;
+    stroke:steelblue;
+    stroke-width:3px;
+}
+/*Styling for the circular markers. The blue is overidden in the javascript to gold for the correlation and country lines.*/
+
+#inds {
+    display:inline-block;
+    color:gold;
+    height:20px;
+    width:150px;
+}
+.selection {
+    font-size:24px;
+    color:black;
+}
+/*Styling for the drop down menu for selecting the country */
+
+
+#writings {
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    padding-bottom: 16px;
+    font-family: georgia,"times new roman", times, serif;
+    font-size:16px;
+    line-height: 24px;
+}
+/*The styling for the article underneath the graph.*/
+
+#opener {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    padding:16px;
+    line-height: 32px;
+}
+/*styling for the opening sentences of the article. Styled to draw attention */
+
+@media all and (max-width:900px) {
+#writings {
+    width:80%;
+    margin-right: 10%;
+    margin-left:10%;
+}
+/*Responsive design. The article width grows to 80% for better readability in smaller screens */
+}
