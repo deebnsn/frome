@@ -96,6 +96,38 @@ img{
   width:100%;
 }
 
+
+#name{
+  font-family: 'David Libre', sans-serif;
+  text-align: center;
+  color: #3b5998;
+  color:black;
+  font-size: 32px;
+  margin-top:16px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+
+}
+
+footer{
+  height:66px;
+  margin-top: 32px;
+  border-top: 1px solid black;
+  bottom:0px;
+  margin-left: 16px;
+  width:96%;
+}
+footer:hover #name{
+  font-size: 36px;
+  color: #3b5998;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
 @media all and (max-width:900px) {
 #title {
    font-size:24px;
