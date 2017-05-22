@@ -102,7 +102,9 @@ img{
   color: #424242;
 }
 
-.social{text-align: center;}
+.social{text-align: center;
+  width:96%;
+  margin-left:16px;}
 .social li{display:inline-block}
 .social ul{margin-left:0;margin-bottom:0; padding-left: 0;}
 .social a,.social svg{display:block}
@@ -166,6 +168,10 @@ a {
 #title {
    font-size:18px;
    font-weight: bold;
+}
+.social {
+  margin-left: 0px;
+  width:100%;
 }
 
 }
