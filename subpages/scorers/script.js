@@ -109,7 +109,7 @@ d3.csv("scorers.csv", type, function(error, data) {
         .attr("id","title")
         .attr("x", margin.left + (width / 15))
         .attr("y", margin.top + 10)
-        .text("Top Flight (1988-2017)")
+        .text("Top Flight (1888-2017)")
    var author = svg.append("text")
         .attr("id","author")
         .attr("x", margin.left + (width / 14.3))
