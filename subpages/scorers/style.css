@@ -143,8 +143,8 @@ footer:hover #name{
   background:white;
   color:black;
   fill:steelblue;
-  -ms-transform:scale(2);
-  transform:scale(2);
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
   transition:background-color .5s,transform .5s ease-out}
 
 a {
