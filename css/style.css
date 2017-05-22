@@ -27,13 +27,14 @@ header{
 	width:96%;
 }
 
-.social ul,nav{text-align:right}
+.social{text-align: right;}
 .social li{display:inline-block}
 .social ul{margin-left:0;margin-bottom:0}
 .social a,.social svg{display:block}
 .social a{height:1.5rem;width:1.5rem}
 .icon{color:#424242;fill:#424242}
 .icon:hover{border-radius:100%;background:#e8e8e8;color:#3b5998;fill:steelblue;-ms-transform:scale(2);transform:scale(2);transition:background-color .5s,transform .5s ease-out}
+
 
 
 /*-------------------------------------*/
@@ -131,6 +132,11 @@ figure{
 }
 hr{
 	display:block;
+}
+.social{
+	text-align: center;
+	position:relative;
+	z-index:1000;
 }
 
 }

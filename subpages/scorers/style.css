@@ -111,18 +111,24 @@ img{
 
 footer{
   height:66px;
+  padding-top:8px;
   margin-top: 32px;
   border-top: 1px solid black;
   bottom:0px;
   margin-left: 16px;
   width:96%;
 }
+
+
 footer:hover #name{
-  font-size: 36px;
-  color: #3b5998;
-}
-
-
+  border-radius:100%;
+  margin-bottom: 0px;
+  background:white;
+  color:black;
+  fill:steelblue;
+  -ms-transform:scale(2);
+  transform:scale(2);
+  transition:background-color .5s,transform .5s ease-out}
 
 a {
   text-decoration: none;
