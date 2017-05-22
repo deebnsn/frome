@@ -96,6 +96,23 @@ img{
   width:100%;
 }
 
+#Share{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #424242;
+}
+
+.social{text-align: center;}
+.social li{display:inline-block}
+.social ul{margin-left:0;margin-bottom:0; padding-left: 0;}
+.social a,.social svg{display:block}
+.social a{height:1.5rem;width:1.5rem}
+.icon{color:#424242;fill:#424242}
+.icon:hover{border-radius:100%;background:#e8e8e8;color:#3b5998;fill:steelblue;-ms-transform:scale(2);transform:scale(2);transition:background-color .5s,transform .5s ease-out}
+
+
+
+
 
 #name{
   font-family: 'David Libre', sans-serif;
