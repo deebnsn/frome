@@ -135,6 +135,64 @@ html, body {
 }
 /*styling for the opening sentences of the article. Styled to draw attention */
 
+
+#Share{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #424242;
+}
+
+.social{text-align: center;
+  width:96%;
+  margin-left:16px;}
+.social li{display:inline-block}
+.social ul{margin-left:0;margin-bottom:0; padding-left: 0;}
+.social a,.social svg{display:block}
+.social a{height:1.5rem;width:1.5rem}
+.icon{color:#424242;fill:#424242}
+.icon:hover{border-radius:100%;background:#e8e8e8;color:#424242;fill:steelblue;-ms-transform:scale(2);transform:scale(2);transition:background-color .5s,transform .5s ease-out}
+
+
+
+
+
+#name{
+  font-family: 'David Libre', sans-serif;
+  text-align: center;
+  color: #3b5998;
+  color:black;
+  font-size: 32px;
+  margin-top:16px;
+  margin-bottom: 16px;
+  margin-left: 0px;
+
+}
+
+footer{
+  height:66px;
+  padding-top:8px;
+  margin-top: 32px;
+  border-top: 1px solid black;
+  bottom:0px;
+  margin-left: 16px;
+  width:96%;
+}
+
+
+footer:hover #name{
+  border-radius:100%;
+  margin-bottom: 0px;
+  background:white;
+  color:black;
+  fill:steelblue;
+  -ms-transform:scale(1.2);
+  transform:scale(1.2);
+  transition:background-color .5s,transform .5s ease-out}
+
+a {
+  text-decoration: none;
+}
+
 @media all and (max-width:900px) {
 #writings {
     width:80%;
@@ -142,4 +200,11 @@ html, body {
     margin-left:10%;
 }
 /*Responsive design. The article width grows to 80% for better readability in smaller screens */
+}
+@media all and (max-width:600px) {
+.social {
+  margin-left: 0px;
+  width:100%;
+}
+
 }
