@@ -7,8 +7,8 @@
 4. Activation Functions
 
  ---------------------------------------------------------------------------------------------------------------------------------------*/
-var client_id = "GOAEATRMDPJ0UISLSAAJCSATIEVCOL1JPPBLW0KW4G5OF5CX";
-var client_secret = "2UIFTQRJVR3B5SOYVPJMVKMZGV2AJBRQ0AUMRP5HRAF1UJZJ";
+var client_id = "BLYTJT5GGQ5JQIES5WI4OGE0IHS0VSHBMDW4H4LTKLGFVNEG";
+var client_secret = "XQO0A0DQ3CWA5YEFQOUXOOQT400RZUMI0JNAEUUXWCJB0Y2U";
 /*Variables created for foursquare id and secret.
 -----------------------------------------------------------------------------------------------------------------------------------------
 -----------------------1-----------------------------Scrolling and Movement-------------------------------------------------------------------------*/
