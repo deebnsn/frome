@@ -215,7 +215,6 @@ d3.csv("cycleData.csv", function(error, data) {
     /* The markers used. Marker A is a circle attached to the Euro12 minus a country line. Marker B is a circle attached to a
     country's line. markerCor a circle attached to the correlation line of svg2. These are displayed when on the click of 
     a country's line or the selection of a country from the drop-drown (select/option) element. They follow mouse movement. */
-
     var rectangle =
         svg.append("rect")
         .attr("width", width)
@@ -243,13 +242,24 @@ are positioned correctly.   */
         .text("Eurozone 12");
     //The Eurozone12 label is appended. This changes when a country is selected.
 
-    if (height < 300) {
+    if (height < 312) {
         svg.select("#author")
             .attr("transform", "translate(" + width / 2 + "," + height / 6 + ")")
         svg.select("#eurozoneLabel")
             .attr("transform", "translate(" + width / 9.5 + "," + height / 4 + ")")
-    };
+    };   
     //some small responsiveness changes when the height of the svg is very low.
+    if (height > 500) {
+        svg.select("#author")
+            .attr("transform", "translate(" + width / 2 + "," + height / 11 + ")")
+        svg.select("#eurozoneLabel")
+            .attr("transform", "translate(" + width / 9.5 + "," + height / 5.25 + ")")
+    };  
+    if (width > 1300) {
+        svg.select("#author")
+            .attr("transform", "translate(" + width / 2.5 + "," + height / 11 + ")")
+    };  
+
 
     var euro12 = svg.append("path").data([data]).attr("id", "euro12").attr("d", line)
     var ireland = svg.append("path").data([data]).attr("class", "line").attr("id", "ireland").attr("d", irelandLine);
