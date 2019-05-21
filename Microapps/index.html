@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title>Microapps</title>
+		<link rel="stylesheet" href="css/style.css" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//fonts.googleapis.com/css?family=David+Libre%7CMontserrat" rel="stylesheet">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+	<header>
+        <h1 id="name"> <b> Microapps </b></h1>
+        <h3 class="author">David Benson</h3>
+	</header>
+	<main>
+      <section class="container">
+        <figure>
+        <a href="subpages/postcode-demographic/index.html">
+        <img src="images/max.jpg">
+        <p class=title><b>Postcode Demographic
+        </b></p>
+        <p class=info> 
+        Enter a UK postcode and this app with provide a demographic classication for it.
+        </p>
+        </a>
+        <hr>
+        </figure>
+        <figure>
+        <a href="subpages/pdf-to-spreadsheet/index.html">
+        <img src="images/mika.jpg">
+        <p class=title><b>PDF to Excel Data Converter 
+        </b></p>
+        <p class=info> 
+        Upload a pdf with data tables inside and this app will extract data from it and save it as a spreadsheet.
+        </p>
+        </a>
+        <hr>
+        </figure>
+      </section>
+		
+	</main>
+  <script>
+
+var diversion = document.getElementById('appLink');
+function is_touch_device() {
+ return (('ontouchstart' in window)
+      || (navigator.MaxTouchPoints > 0)
+      || (navigator.msMaxTouchPoints > 0));
+}
+
+if (is_touch_device()) {
+ diversion.href = "subpages/burgerHuntApp/index.html";
+
+}
+
+;
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92218230-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
+
+		
+
+
+
+
+
+			
+	
